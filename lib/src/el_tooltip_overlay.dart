@@ -156,7 +156,9 @@ class ElTooltipOverlayState extends State<ElTooltipOverlay> {
                   : widget.toolTipElementsDisplay.arrow.y - 20,
               left: widget.longTailPosition == 'Right'
                   ? widget.toolTipElementsDisplay.arrow.x - 19
-                  : widget.longTailPosition == 'Center' ? widget.toolTipElementsDisplay.arrow.x - 10 : widget.toolTipElementsDisplay.arrow.x,
+                  : widget.longTailPosition == 'Center' ? widget.toolTipElementsDisplay.arrow.x - 10
+                  // : widget.toolTipElementsDisplay.arrow.x ,
+                  : widget.toolTipElementsDisplay.arrow.x + 2, ///changes
               child: Arrow(
                 color: widget.color,
                 position: widget.toolTipElementsDisplay.position,

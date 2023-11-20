@@ -32,7 +32,7 @@ class Corner extends CustomPainter {
 
     // // Draw the shadow path
     // paint.color = Colors.grey.withOpacity(0.4); // Shadow color with opacity
-    paint.color = Colors.red; // Shadow color with opacity
+    paint.color = Colors.grey.shade400; // Shadow color with opacity
     canvas.drawPath(shadowPath, paint);
 
     // Add a shadow effect using the drawShadow method
